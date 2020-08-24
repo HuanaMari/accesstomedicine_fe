@@ -1,0 +1,93 @@
+   //START COLLAPSIBLE MENU
+.collapsible-menu-container {
+    @media(min-width:767px) {
+        display:none;
+    }
+    position: absolute;
+    top:auto;
+    left:0;
+    right:0;
+    width:100%;
+    z-index: 1000;
+    opacity:0;
+    transform: translateX(-100%);
+    transition: transform 0.35s linear, opacity 0.35s ease-in-out;
+    background-color: #3d3d3f;
+    &.menu-active {
+        transform: translateY(0);
+        opacity:1;
+    }
+    .collapsible-menu {
+        list-style: none;
+        padding-left: 0;
+        @include main_container();
+        margin-bottom:8px;
+        @media(max-width:767px) {
+            margin-bottom:11px;
+        }
+        @media(max-width:575px) {
+            margin-bottom:8px;
+        }
+        width:100%;
+        background-color: #3d3d3f;
+        li {
+            margin:5px 0;
+            background-color:#E2E3E4;
+            &:first-child {
+                margin-top:0;
+            }
+            &:last-child {
+                margin-bottom:0;
+            }
+            @media(max-width:767px) {
+                min-height:35px
+            }
+            @media(max-width:625px) {
+                min-height:30px
+            }
+            @media(max-width:575px) {
+                min-height: 25px;
+            }
+            a {
+                text-transform: uppercase;
+                color:black;
+                font-weight:700;
+                width:100%;
+                display:block;
+                padding:12px;
+                @media(max-width:1400px)
+                {
+                    font-size:0.75em;
+                }
+                @media(max-width:1200px)
+                {
+                    padding:8px;
+                }
+                @media(max-width:991px) {
+                    font-size:0.585em;
+                    padding: 4px 5px;
+                }
+                @media(max-width:575px) {
+                    font-size: 0.525em;
+                }
+            }
+        }
+        li.menu-item-has-children {
+            .sub-menu{
+                list-style: none;
+                padding-left:25px;
+                padding-bottom:10px;
+                li {
+                    a {
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .collapsed-search {
+        
+    }
+}
+//END COLLAPSIBLE MENU

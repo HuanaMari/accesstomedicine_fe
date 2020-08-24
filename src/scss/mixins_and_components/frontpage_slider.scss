@@ -1,0 +1,141 @@
+
+
+.slider-type-1{ 
+
+    .ls-gui-element.ls-bottom-nav-wrapper {
+        max-width: 1400px;;
+        text-align: right;
+        height:3.75rem;
+        top:-3.75rem !important;
+        z-index: 50;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        @media(max-width:1199px) {
+            max-width: calc(100%);
+        }
+        @media(max-width:767px) {
+            top:-50px !important;
+            height: 50px;;
+        }
+    }
+
+    .ls-v6.ls-container .ls-bottom-slidebuttons {
+        margin-right:25px !important;
+        margin-top:3px !important;
+        @media(max-width:1199px) {
+        }
+        @media(max-width:767px) {
+            margin-right:15px !important;
+        }
+
+        a {
+            background-color:white;
+                &.ls-nav-active {
+                background-color: #96BD0D!important;
+            }
+            @media(max-width:991px) {
+                width:7px !important;
+                height:7px !important;
+            }
+            @media(max-width:575px) {
+                width:6px !important;
+                height:6px !important;
+            }
+        }
+    }
+
+    .ls-gui-element.ls-bottom-nav-wrapper .ls-bottom-slidebuttons a {
+        border: 2px solid rgba(255,255,255,0) !important;
+    }
+
+    .ls-wrapper.ls-in-out {
+        min-height:3.75rem !important;
+        max-height:3.75rem !important;
+        height:auto !important;
+        top:unset !important;
+        bottom:0px !important;
+        width: 1380px;;
+        left: calc(50% - 675px) !important;
+        @media(max-width:1399px) {
+            width:calc(100% - 60px) !important;
+            left:25px !important;
+
+        }
+        @media(max-width:767px) {
+            min-height:50px !important;
+            max-height: 50px !important;
+        }
+    }
+
+    .ls-wrapper.ls-z {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+
+    .ls-inner .ls-wrapper {
+            & h1,h2,h3,h4,h5,p{
+            background:  rgba(61, 61, 63, 0.75);
+
+            font-size:1.250em !important;
+            color:white !important;
+            min-height: 3.75rem !important;
+            max-height: 3.75rem !important;
+            height:auto !important;
+            white-space: normal !important;
+            width: calc(100% - 60px) !important;
+            display:flex !important;
+            align-items: center !important;
+            padding-left:25px !important;
+            margin-top:3px !important;
+            width:1200px !important;
+            @media(max-width:1199px) {
+                font-size:1em !important;
+                width:850px !important
+            }
+            @media(max-width:991px) {
+                font-size:0.756em !important;
+                width:70vw !important;
+            }
+            @media(max-width:767px) {
+                min-height: 50px !important;
+                max-height: 50px !important;
+                padding-left:15px !important;
+
+            }
+        }
+    }
+
+    // .ls-slide-backgrounds  {
+    //     position: relative;
+    //     &:before {
+    //         position:absolute;
+    //         z-index: 0;
+    //         bottom: 0;
+    //         width:100%;
+    //         height:3.75rem;
+    //         background:  rgba(61, 61, 63, 0.75);
+    //         content:"";
+    //         z-index: 30;
+    //         width: 1380px;;
+    //         left: calc(50% - 690px);
+    //         @media(max-width:1399px) {
+    //             width:calc(100% - 30px);
+    //             left:15px;
+    //         }   
+    //         @media(max-width:767px) {
+    //             width:calc(100% - 22px);
+    //             left:11px;
+    //             height:50px !important;
+    //         }
+    //         @media(max-width:575px) {
+    //             max-width: calc(100% - 16px);
+    //             width: calc(100% - 16px);
+    //             left:8px;
+    //         }
+    //     }
+    // }
+
+}

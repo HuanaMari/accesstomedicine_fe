@@ -1,0 +1,80 @@
+section { 
+    &.hero.single-news {
+        .featured-image {
+            width: 100%;
+            min-height: 430px;
+            // background-attachment: fixed;
+            background-color: #091d69;
+            background-size: 100%;
+            background-position: center;
+            @include media-breakpoint-down(md) {
+                min-height: 330px;
+            }
+            @include media-breakpoint-down(sm) {
+                min-height: 280px;
+            }
+        }
+    }
+}
+section {
+    &.single-news-content {
+        position: relative;
+        background-color: #fff;
+        color: #333333;
+        max-width: 968px;
+        margin-top: -100px;
+        .content-container {
+            .meta-wrapper {
+                div:nth-of-type(1) {
+                    border-right: 1px solid #091d69;
+                    padding-right: 10px;
+                    font-size: 0.875em;
+                }
+                div:nth-of-type(2) {
+                    padding-left: 10px;
+                    font-size: 0.875em;
+                    font-weight: 500;
+                    img {
+                        display: inline-block;
+                        width: 22px;
+                        border-radius: 22px;
+                        margin-top: -3px;
+                    }
+                }
+            }
+            .content {
+                h1 {
+                    color: #091d69;
+                    font-size: 2.813em;
+                    font-weight: bold;
+                    max-width: 90%;
+                }
+                h2 {
+                    color: #091d69;
+                    max-width: 90%;
+                    font-size: 1.500em;
+                    font-weight: 500;
+                    margin: 8px auto 8px auto;
+                }
+                p {
+                    max-width: 90%;
+                    margin: 8px auto 8px auto;
+                    line-height: 28px;
+                }
+                ul {
+                    max-width: 90%;
+                    margin: 8px auto 8px auto;
+                    line-height: 28px;
+                }
+                a {
+                    color: #007dc5;
+                    text-decoration: underline;
+                }
+                img {
+                    width: 100%;
+                    margin: 60px auto 60px auto;
+                }
+            }
+        }
+    }
+}

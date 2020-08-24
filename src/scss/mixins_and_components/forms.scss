@@ -1,0 +1,105 @@
+#publication-form {
+    background:#ECECED;
+    padding:32px 25px;
+    width:100%;
+    color:#1A171B;
+    margin-left: 8px;
+    margin-right: 8px;
+    @media(max-width:991px) {
+        margin-bottom:7px;
+    }
+
+    .foom-radio-label-left {
+        margin-right: 5px;
+    }
+
+    label.hidden {
+        visibility:hidden;
+    }
+
+    label {
+        margin-bottom:3px;
+        font-size: 0.875em;
+        border:none;
+        padding-left:2px;
+    }
+
+    .form-positioning {
+        padding-right: 66px;
+    }
+
+    select,#publication_key_word {
+        width:18.750rem;
+        height:2.188rem;
+        padding-left:10px;
+        font-size: 0.938em;
+        @media(max-width:991px) {
+            font-size: 0.678em;
+            width:300px;
+            height:35px;
+        }
+        @media(max-width:420px) {
+            font-size: 0.678em;
+            width:230px;
+            height:35px;
+        }
+        border:none;
+    }
+    select {
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+        position:relative;
+        background:url('../img/foom_arrow_down.svg');
+        background-position-x: 277px;
+        background-size: 12px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .foom-positioning {
+        &:first-child {
+            margin-right: 6px;
+        }
+    }
+    .foom-radio-wrapper {
+        .foom-radio-label {
+            background:white;
+            width:146px;
+            height:2.188rem;
+            font-size: 0.875em;
+            margin-bottom:0;
+            cursor:pointer;
+            text-align: center;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            @media(max-width:991px) {
+                font-size:0.581em;
+            }
+        }
+        input {
+            display:none;
+        }
+        label.active {
+            background: #6F7072;
+            color:white;
+        }
+    }
+    .btn {
+        margin-top:35px;
+        width:168px;
+        height:41px;
+        background:#96BD0D;
+        color:#FFFFFF;
+        text-align: left;
+        padding-left:20px;
+        font-weight: 700;
+        font-size: 0.938em;
+        border:none;
+        border-radius: 0;
+        @media(max-width:991px) {
+            font-size: 0.678em;
+        }
+    }
+}
