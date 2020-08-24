@@ -3221,7 +3221,42 @@ section.footer {
     transform: translateY(0); } }
 
 section.hero {
-  background-image: url(../images/pill-1.png);
+  background-image: url(../images/main-hand.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  height: 430px;
   background-size: cover; }
+
+section.content {
+  width: 970px;
+  background-color: #fff;
+  font-size: 1.125em; }
+  section.content .articleName {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 330px;
+    background-color: #fff;
+    width: 970px;
+    padding: 35px 0; }
+    section.content .articleName h1 {
+      font-size: 2.5em;
+      font-weight: bolder; }
+    section.content .articleName .date, section.content .articleName .author {
+      font-size: 0.78em;
+      text-align: center;
+      align-content: center; }
+    section.content .articleName .author p {
+      line-height: 1; }
+    section.content .articleName .author img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%; }
+  section.content .m-200 {
+    margin-top: 200px; }
+  section.content .img-container img {
+    width: 970px;
+    height: 530px; }
+  section.content h3 {
+    font-size: 1.333333em; }
+  section.content ul {
+    padding-left: 22px; }
