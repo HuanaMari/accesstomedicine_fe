@@ -107,20 +107,91 @@
             </div>
         </nav>
     </header>
+    <section class="main-bg"></section>
+    <section id="intro" class="text-center">
+        <div class="pageName mx-auto mb-5">
+            <h1>Solving the problem of medicine shortages</h1>
+        </div>
+
+    </section>
     <!-- CONTENT SECTION -->
     <section class="content mx-auto">
-        <div class="articleName mx-auto mb-5">
-            <div class="d-flex  justify-content-center text-center mx-auto">
-                <div> <time class="date mb-3" datetime="2020-01-06T16:44:17+00:00">January 10, 2020</time></div>
-                <div class="author d-flex align-items-center  mx-auto">
-                    <img src="./assets/images/author.png" alt="">
-                    <p class="font-weight-bold">Name Surname</p>
+        <div class="intro text-center">
+            <p>It's undeniable that medicine shortages are occurring with frequency around Europe. But it does not have
+                to be this way. From adjustments in EU policy and clearer requirements for manufacturers, to better
+                facilitation of imports and exports in the internal market, this is a problem that can be solved.</p>
+            <p>Here are some of the most common reasons why medicine shortages take place and what policy changes could
+                alleviate them. </p>
+        </div>
+
+        <div class="problems">
+            <div class="problem-one ">
+                <div class="problem-content d-flex flex-row justify-content-between">
+                    <img src="./assets/images/Problem1.png" alt="problem#1">
+                    <div class="problem-info">
+                        <h3>Problem #1—manufacturing issues</h3>
+                        <p>Manufacturing and quality issues such as the temporary closure of a factory or production lag
+                            times are among the main root causes of shortages in Europe. How do we address this problem?
+                            Here are three actions that could be taken:</p>
+                        <ol>
+                            <li>Whenever a marketing authorisation holder reports a shortage, it should
+                                be obliged by EU law to make a prevention and or response plan. </li>
+                            <li>An EU-wide legal obligation should exist that requires marketing
+                                authorisation holders to maintain a safety stock of 2-4 months for medicines of major
+                                therapeutic interest.</li>
+                            <li>EU legislation should provide for the possibility to impose financial
+                                sanctions if the responsibilities related to shortages plans and stockpiling are not
+                                met. </li>
+                        </ol>
+                    </div>
                 </div>
+            </div>
+            <div class="problem-two">
+                <div class="problem-content d-flex flex-row justify-content-between align-items-center">
+                    <div class="problem-info">
+                        <h3>Problem #2—supply issues </h3>
+                        <p>Problems in the supply chain of medicine, such as supply quotas, inefficiency in logistics,
+                            and relying on too few suppliers, contribute to medicine shortages. Here are five
+                            recommendations that could help mitigate the problem:</p>
+                        <ol>
+                            <li>Requirements for having diversified supply sources could be incorporated
+                                in the requirements when the public sector buys medicine.</li>
+                            <li>Wholesalers should have a right to be supplied by manufacturers in order
+                                to meet patient needs and ensure sufficient buffer stocks and a competitive internal
+                                market. </li>
+                            <li>Supply quotas must always be sufficiently transparent, flexible, and
+                                justified, and ‘black-box’ quotas should be banned.</li>
+                            <li>Member States should set up NCA-led national dialogue platforms between
+                                supply chain stakeholders to exchange information on products in shortage or in risk of
+                                shortage. </li>
+                            <li>Patient and healthcare provider platforms should be created to directly
+                                assist patients and healthcare providers with their needs. </li>
+                        </ol>
+                    </div>
+                    <img src="./assets/images/Problem2.png" alt="problem#2">
+                </div>
+
+            </div>
+            <div class="problem-three">
+                <div class="problem-content d-flex flex-row justify-content-between">
+                    <img src="./assets/images/Problem3.png" alt="problem#3">
+                    <div class="problem-info">
+                    <h3>Problem #3—regulatory issues</h3>
+                    <p>Regulatory problems, such as lag time on approvals, national requirements, and the lack of
+                        harmonisation, also lead to medicine shortages. Here are two changes that could help mitigate
+                        the problem:</p>
+                       <ol>
+                           <li>In the context of shortages, the EU should give more regulatory flexibility to parallel importers, especially in relation to language requirements. </li>
+                           <li>Packaging requirements of medicines should be harmonised at an EU level.</li>
+                       </ol> 
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-     <!-- FOOTER SECTION -->
-     <section class="footer d-flex justify-content-between align-items-center flex-column flex-lg-row">
+    <!-- FOOTER SECTION -->
+    <section class="footer d-flex justify-content-between align-items-center flex-column flex-lg-row">
         <div class="d-flex my-3 mx-lg-3 text-white">
             © Copyright 2019. All rights reserved
         </div>
@@ -146,3 +217,21 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // menu click
+        $(document).on('click', '.navbar-light .navbar-toggler', function (e) {
+            // if($(e.target).closest('.navbar-toggler').hasClass('menuSwitch')) {
+            //     $('#navbarNav').toggleClass('displayNone');
+            // }
+            $('#navbarNav').removeClass('displayNone');
+        });
+        $(document).on('click', '.navbar-close', function (e) {
+            setTimeout(
+                function () {
+                    $('#navbarNav').addClass('displayNone')
+                }, 350);
+        });
+    </script>
+</body>
+
+</html>

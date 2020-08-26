@@ -2937,15 +2937,17 @@ section.solutions {
   text-align: center; }
   @media (max-width: 991.98px) {
     section.solutions {
-      min-height: calc(100vw / 1.777777778); } }
-  section.solutions .container {
-    overflow-x: hidden !important; }
+      min-height: calc(100vw / 1.777777778);
+      font-size: 0.845em; } }
   section.solutions h2 {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3333333em;
     letter-spacing: 1.5px; }
+    @media (max-width: 575.98px) {
+      section.solutions h2 {
+        font-size: 1em; } }
   section.solutions .light-text {
     color: #6dcff6;
     margin: 38px 50px 30px 50px;
@@ -2960,6 +2962,9 @@ section.solutions {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 0.5rem; }
+    @media (max-width: 991.98px) {
+      section.solutions span {
+        font-size: 1.333em; } }
   section.solutions .carousel {
     background-color: #6bcbf2;
     height: 340px;
@@ -2973,6 +2978,10 @@ section.solutions {
       @media (max-width: 991.98px) {
         section.solutions .carousel .carousel-item {
           max-width: 80%; } }
+      @media (max-width: 575.98px) {
+        section.solutions .carousel .carousel-item {
+          max-width: 50%;
+          font-size: 1.33em; } }
     section.solutions .carousel .carousel-indicators li {
       display: inline-block;
       position: relative;
@@ -2992,6 +3001,12 @@ section.solutions {
       margin: 0px 6px;
       border-color: #091d69;
       background-color: transparent !important; }
+    @media (max-width: 991.98px) {
+      section.solutions .carousel {
+        font-size: 1.35em; } }
+    @media (max-width: 575.98px) {
+      section.solutions .carousel {
+        font-size: 1.05em; } }
   section.solutions .carousel-control-next,
   section.solutions .carousel-control-prev {
     width: 80px; }
@@ -3005,7 +3020,8 @@ section.solutions {
     font-size: 0.8em;
     padding: 10px 25px !important;
     font-weight: 900;
-    outline: none; }
+    outline: none;
+    border: solid 1px #091d69; }
   section.solutions .solution-numbering {
     line-height: 2.7rem;
     height: 45px;
@@ -3225,38 +3241,204 @@ section.hero {
   background-repeat: no-repeat;
   height: 430px;
   background-size: cover; }
+  @media (max-width: 991.98px) {
+    section.hero {
+      height: 360px; } }
+  @media (max-width: 575.98px) {
+    section.hero {
+      background-image: none; } }
+
+.articleName {
+  position: absolute;
+  width: 970px;
+  left: 0;
+  right: 0;
+  padding: 35px;
+  top: 330px;
+  background-color: #fff;
+  color: #091d69; }
+  @media (max-width: 991.98px) {
+    .articleName {
+      top: 250px;
+      width: 80%; } }
+  @media (max-width: 575.98px) {
+    .articleName {
+      top: 60px;
+      width: 100%; } }
+  @media (max-width: 991.98px) {
+    .articleName h1 {
+      margin-top: 20px !important;
+      font-size: 1.75em !important; } }
+  @media (max-width: 575.98px) {
+    .articleName h1 {
+      font-size: 1.5em !important; } }
+  .articleName .author img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; }
 
 section.content {
   width: 970px;
   background-color: #fff;
-  font-size: 1.125em; }
-  section.content .articleName {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 330px;
-    background-color: #fff;
-    width: 970px;
-    padding: 35px 0; }
-    section.content .articleName h1 {
-      font-size: 2.5em;
-      font-weight: bolder; }
-    section.content .articleName .date, section.content .articleName .author {
-      font-size: 0.78em;
-      text-align: center;
-      align-content: center; }
-    section.content .articleName .author p {
-      line-height: 1; }
-    section.content .articleName .author img {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%; }
-  section.content .m-200 {
-    margin-top: 200px; }
-  section.content .img-container img {
-    width: 970px;
-    height: 530px; }
+  font-size: 1.125em;
+  color: #333333; }
+  @media (max-width: 991.98px) {
+    section.content {
+      width: 80%;
+      font-size: 1em; } }
+  @media (max-width: 575.98px) {
+    section.content {
+      width: 100%; } }
+  section.content .container {
+    padding: 0 85px; }
+    @media (max-width: 575.98px) {
+      section.content .container {
+        padding: 0 20px;
+        font-size: 0.88em; } }
+  section.content .first-part {
+    margin-top: 158px; }
+    @media (max-width: 991.98px) {
+      section.content .first-part {
+        margin-top: 0; } }
+    @media (max-width: 575.98px) {
+      section.content .first-part {
+        margin-top: -130px; } }
+    section.content .first-part h3 {
+      margin: 50px 85px 55px 85px; }
+      @media (max-width: 991.98px) {
+        section.content .first-part h3 {
+          margin: 40px 10px 30px 10px;
+          font-size: 1.125em; } }
+  section.content .second-part {
+    margin-bottom: 135px; }
+    @media (max-width: 991.98px) {
+      section.content .second-part {
+        margin-bottom: 60px;
+        margin-top: 20px !important; } }
+    section.content .second-part h3 {
+      color: #091d69;
+      margin-bottom: 20px; }
+      @media (max-width: 991.98px) {
+        section.content .second-part h3 {
+          font-size: 1.125em; } }
+  section.content .img-container {
+    height: 530px;
+    background-image: url(../images/Naocari.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (max-width: 991.98px) {
+      section.content .img-container {
+        background-position: left;
+        height: 430px; } }
   section.content h3 {
     font-size: 1.333333em; }
   section.content ul {
-    padding-left: 22px; }
+    padding-left: 22px;
+    color: #333; }
+
+section.main-bg {
+  background-image: url(../images/solving-main-bg.png);
+  height: 430px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 991.98px) {
+    section.main-bg {
+      height: 360px; } }
+  @media (max-width: 575.98px) {
+    section.main-bg {
+      background-image: none; } }
+
+section .pageName {
+  position: absolute;
+  width: 970px;
+  left: 0;
+  right: 0;
+  padding: 35px 125px;
+  top: 330px;
+  background-color: #fff;
+  color: #091d69; }
+  @media (max-width: 991.98px) {
+    section .pageName {
+      top: 250px;
+      width: 80%; } }
+  @media (max-width: 575.98px) {
+    section .pageName {
+      top: 60px;
+      width: 100%; } }
+  section .pageName h1 {
+    font-size: 2.8125em; }
+    @media (max-width: 991.98px) {
+      section .pageName h1 {
+        font-size: 1.75em !important; } }
+    @media (max-width: 575.98px) {
+      section .pageName h1 {
+        font-size: 1.5em !important; } }
+
+section .intro {
+  margin-top: 90px;
+  font-size: 1.333em; }
+  @media (max-width: 991.98px) {
+    section .intro {
+      margin-top: -130px;
+      padding: 0 20px; } }
+
+section h3 {
+  color: #091d69;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+@media (max-width: 991.98px) {
+  section .problem-content {
+    flex-flow: column !important;
+    align-content: center;
+    align-items: center; } }
+
+section .problem-content img {
+  width: 380px;
+  height: 430px; }
+
+section .problem-info span {
+  color: #091d69;
+  font-weight: bold; }
+
+section .problem-info ol {
+  counter-reset: counter;
+  list-style: none; }
+
+section .problem-info ol li {
+  position: relative;
+  margin-bottom: 16px; }
+
+section .problem-info li::before {
+  content: counter(counter) ". ";
+  counter-increment: counter;
+  color: #091d69;
+  font-weight: bold;
+  position: absolute;
+  left: -20px; }
+
+@media (max-width: 991.98px) {
+  section .problems {
+    width: 80%;
+    margin: 0 auto; } }
+
+section .problems .problem-one {
+  margin-top: 80px; }
+  section .problems .problem-one .problem-info {
+    margin-left: 70px; }
+
+section .problems .problem-two {
+  margin: 90px 0 85px 0; }
+  section .problems .problem-two .problem-info {
+    margin-right: 70px; }
+
+section .problems .problem-three {
+  margin-bottom: 120px; }
+  section .problems .problem-three .problem-info {
+    margin-left: 70px; }
+
+@media (max-width: 991.98px) {
+  section .problems .problem-one .problem-info,
+  section .problems .problem-two .problem-info,
+  section .problems .problem-three .problem-info {
+    margin: 0 auto; } }
