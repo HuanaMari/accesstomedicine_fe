@@ -2925,6 +2925,66 @@ section.watch-the-video {
     width: 100%;
     height: 100%; }
 
+.solutionOne::before {
+  content: "solution 01";
+  line-height: 2.7rem;
+  padding: 1px 18px;
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 1.3333em;
+  font-weight: bold;
+  color: #091d69;
+  text-transform: uppercase;
+  line-height: 2.7rem; }
+  @media (max-width: 991.98px) {
+    .solutionOne::before {
+      line-height: 1.5;
+      top: -15px;
+      left: calc(50% - 75px); } }
+
+.solutionTwo::before {
+  content: "solution 02";
+  line-height: 2.7rem;
+  padding: 1px 18px;
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 1.3333em;
+  font-weight: bold;
+  color: #091d69;
+  text-transform: uppercase;
+  line-height: 2.7rem; }
+  @media (max-width: 991.98px) {
+    .solutionTwo::before {
+      line-height: 1.5;
+      top: -15px;
+      left: calc(50% - 75px); } }
+
+.solutionThree::before {
+  content: "solution 03";
+  line-height: 2.7rem;
+  padding: 1px 18px;
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 1.3333em;
+  font-weight: bold;
+  color: #091d69;
+  text-transform: uppercase;
+  line-height: 2.7rem; }
+  @media (max-width: 991.98px) {
+    .solutionThree::before {
+      line-height: 1.5;
+      top: -15px;
+      left: calc(50% - 75px); } }
+
 section.solutions {
   background-image: url(../images/background-carousel.png);
   background-size: cover;
@@ -2967,7 +3027,6 @@ section.solutions {
         font-size: 1.333em; } }
   section.solutions .carousel {
     background-color: #6bcbf2;
-    height: 340px;
     font-size: 1.185em; }
     section.solutions .carousel h2 {
       font-size: 0.75em; }
@@ -3022,24 +3081,6 @@ section.solutions {
     font-weight: 900;
     outline: none;
     border: solid 1px #091d69; }
-  section.solutions .solution-numbering {
-    line-height: 2.7rem;
-    height: 45px;
-    width: 218px;
-    position: absolute;
-    top: -25px;
-    left: 75px;
-    text-align: center;
-    background-color: #fff;
-    font-size: 0.875em;
-    font-weight: bold;
-    color: #091d69;
-    text-transform: uppercase;
-    line-height: 2.7rem; }
-    @media (max-width: 991.98px) {
-      section.solutions .solution-numbering {
-        top: -20px;
-        left: calc(50% - 35.5px); } }
 
 section.support {
   background-color: #6dcff6; }
@@ -3243,10 +3284,11 @@ section.hero {
   background-size: cover; }
   @media (max-width: 991.98px) {
     section.hero {
-      height: 360px; } }
+      height: 360px;
+      background-position: center center; } }
   @media (max-width: 575.98px) {
     section.hero {
-      background-image: none; } }
+      height: 150px; } }
 
 .articleName {
   position: absolute;
@@ -3263,19 +3305,25 @@ section.hero {
       width: 80%; } }
   @media (max-width: 575.98px) {
     .articleName {
-      top: 60px;
-      width: 100%; } }
+      top: 90px;
+      font-size: 0.875em;
+      padding: 20px;
+      line-height: -1; } }
   @media (max-width: 991.98px) {
     .articleName h1 {
       margin-top: 20px !important;
       font-size: 1.75em !important; } }
   @media (max-width: 575.98px) {
     .articleName h1 {
-      font-size: 1.5em !important; } }
+      font-size: 1.333em !important;
+      margin-top: 10px !important; } }
   .articleName .author img {
     width: 25px;
     height: 25px;
     border-radius: 50%; }
+    @media (max-width: 575.98px) {
+      .articleName .author img {
+        margin: 0 3px; } }
 
 section.content {
   width: 970px;
@@ -3289,10 +3337,13 @@ section.content {
   @media (max-width: 575.98px) {
     section.content {
       width: 100%; } }
-  section.content .container {
+  section.content .containerL {
     padding: 0 85px; }
+    @media (max-width: 767.98px) {
+      section.content .containerL {
+        padding: 0 30px; } }
     @media (max-width: 575.98px) {
-      section.content .container {
+      section.content .containerL {
         padding: 0 20px;
         font-size: 0.88em; } }
   section.content .first-part {
@@ -3302,7 +3353,7 @@ section.content {
         margin-top: 0; } }
     @media (max-width: 575.98px) {
       section.content .first-part {
-        margin-top: -130px; } }
+        margin-top: 100px; } }
     section.content .first-part h3 {
       margin: 50px 85px 55px 85px; }
       @media (max-width: 991.98px) {
@@ -3329,12 +3380,26 @@ section.content {
     @media (max-width: 991.98px) {
       section.content .img-container {
         background-position: left;
-        height: 430px; } }
+        height: 300px;
+        background-position: center left; } }
   section.content h3 {
     font-size: 1.333333em; }
   section.content ul {
     padding-left: 22px;
     color: #333; }
+
+#solving {
+  width: 970px;
+  background-color: #fff;
+  font-size: 1.125em;
+  color: #333333; }
+  @media (max-width: 991.98px) {
+    #solving {
+      width: 100%;
+      font-size: 1em; } }
+  @media (max-width: 575.98px) {
+    #solving {
+      width: 100%; } }
 
 section.main-bg {
   background-image: url(../images/solving-main-bg.png);
@@ -3346,7 +3411,7 @@ section.main-bg {
       height: 360px; } }
   @media (max-width: 575.98px) {
     section.main-bg {
-      background-image: none; } }
+      height: 150px; } }
 
 section .pageName {
   position: absolute;
@@ -3363,8 +3428,9 @@ section .pageName {
       width: 80%; } }
   @media (max-width: 575.98px) {
     section .pageName {
-      top: 60px;
-      width: 100%; } }
+      top: 90px;
+      margin: 0;
+      padding: 20px; } }
   section .pageName h1 {
     font-size: 2.8125em; }
     @media (max-width: 991.98px) {
@@ -3372,34 +3438,48 @@ section .pageName {
         font-size: 1.75em !important; } }
     @media (max-width: 575.98px) {
       section .pageName h1 {
-        font-size: 1.5em !important; } }
+        font-size: 1.333em !important; } }
 
 section .intro {
   margin-top: 90px;
-  font-size: 1.333em; }
+  font-size: 1.333em;
+  color: #333; }
   @media (max-width: 991.98px) {
     section .intro {
-      margin-top: -130px;
-      padding: 0 20px; } }
+      margin-top: 20px;
+      margin: 20px 80px 0px 80px;
+      padding: 0 50px; } }
+  @media (max-width: 575.98px) {
+    section .intro {
+      margin: 30px 0 0 0;
+      font-size: 1em; } }
 
 section h3 {
   color: #091d69;
   font-weight: bold;
   margin-bottom: 20px; }
+  @media (max-width: 991.98px) {
+    section h3 {
+      margin-top: 40px; } }
+
+@media (max-width: 991.98px) {
+  section .column-flex {
+    flex-flow: column !important; } }
+
+@media (max-width: 991.98px) {
+  section .column-reverse {
+    flex-flow: column-reverse !important; } }
 
 @media (max-width: 991.98px) {
   section .problem-content {
-    flex-flow: column !important;
     align-content: center;
-    align-items: center; } }
-
-section .problem-content img {
-  width: 380px;
-  height: 430px; }
+    align-items: center;
+    margin: 0 auto !important; } }
 
 section .problem-info span {
   color: #091d69;
-  font-weight: bold; }
+  font-weight: bold;
+  flex-basis: 50%; }
 
 section .problem-info ol {
   counter-reset: counter;
@@ -3422,18 +3502,31 @@ section .problem-info li::before {
     width: 80%;
     margin: 0 auto; } }
 
+@media (max-width: 575.98px) {
+  section .problems {
+    font-size: 0.87em; } }
+
 section .problems .problem-one {
   margin-top: 80px; }
+  @media (max-width: 991.98px) {
+    section .problems .problem-one {
+      margin-top: 40px; } }
   section .problems .problem-one .problem-info {
     margin-left: 70px; }
 
 section .problems .problem-two {
   margin: 90px 0 85px 0; }
+  @media (max-width: 991.98px) {
+    section .problems .problem-two {
+      margin: 40px 0; } }
   section .problems .problem-two .problem-info {
     margin-right: 70px; }
 
 section .problems .problem-three {
   margin-bottom: 120px; }
+  @media (max-width: 991.98px) {
+    section .problems .problem-three {
+      margin-bottom: 60px; } }
   section .problems .problem-three .problem-info {
     margin-left: 70px; }
 

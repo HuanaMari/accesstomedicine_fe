@@ -15,7 +15,7 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
-
+@import "mixins_and_components/carouselSolution";
 
 @import "header/header";
 
@@ -251,11 +251,13 @@ section {
 
         .container {
             max-width: 1182px;
+
         }
 
         a {
             padding-top: 28px;
             padding-bottom: 28px;
+
 
             .container {
                 max-width: 22.500em;
@@ -554,6 +556,18 @@ section {
     }
 }
 
+.solutionOne::before {
+    @include carouselSolutionBefore("solution 01")
+}
+
+.solutionTwo::before {
+    @include carouselSolutionBefore("solution 02")
+}
+
+.solutionThree::before {
+    @include carouselSolutionBefore("solution 03")
+}
+
 section {
     &.solutions {
         background-image: url(../images/background-carousel.png);
@@ -612,7 +626,6 @@ section {
 
         .carousel {
             background-color: #6bcbf2;
-            height: 340px;
             font-size: 1.185em;
 
 
@@ -692,32 +705,6 @@ section {
             outline: none;
             border: solid 1px #091d69;
         }
-
-        .solution-numbering {
-            line-height: 2.7rem;
-            height: 45px;
-            width: 218px;
-            position: absolute;
-            top: -25px;
-            left: 75px;
-            text-align: center;
-            background-color: #fff;
-            font-size: 0.875em;
-            font-weight: bold;
-            color: #091d69;
-            text-transform: uppercase;
-            line-height: 2.7rem;
-
-            @include media-breakpoint-down(md) {
-                top: -20px;
-                left: calc(50% - 35.5px);
-            }
-        }
-
-
-
-
-
 
     }
 }
@@ -945,10 +932,12 @@ section {
 
         @include media-breakpoint-down(md) {
             height: 360px;
+            background-position: center center;
+
         }
 
         @include media-breakpoint-down(xs) {
-            background-image: none;
+            height: 150px;
         }
     }
 }
@@ -968,9 +957,13 @@ section {
         width: 80%;
     }
 
+
     @include media-breakpoint-down(xs) {
-        top: 60px;
-        width: 100%;
+        top: 90px;
+        font-size: 0.875em;
+        padding: 20px;
+        line-height: -1;
+
     }
 
     h1 {
@@ -980,7 +973,9 @@ section {
         }
 
         @include media-breakpoint-down(xs) {
-            font-size: 1.5em !important;
+            font-size: 1.333em !important;
+            margin-top: 10px !important;
+
         }
     }
 
@@ -989,6 +984,9 @@ section {
         height: 25px;
         border-radius: 50%;
 
+        @include media-breakpoint-down(xs) {
+            margin: 0 3px;
+        }
     }
 
 }
@@ -1009,8 +1007,13 @@ section {
             width: 100%;
         }
 
-        .container {
+        .containerL {
             padding: 0 85px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 0 30px;
+
+            }
 
             @include media-breakpoint-down(xs) {
                 padding: 0 20px;
@@ -1027,7 +1030,7 @@ section {
             }
 
             @include media-breakpoint-down(xs) {
-                margin-top: -130px;
+                margin-top: 100px;
             }
 
             h3 {
@@ -1066,7 +1069,8 @@ section {
 
             @include media-breakpoint-down(md) {
                 background-position: left;
-                height: 430px;
+                height: 300px;
+                background-position: center left;
             }
         }
 
@@ -1081,6 +1085,21 @@ section {
         }
     }
 }
+#solving{   
+    width: 970px;
+ background-color: #fff;
+ font-size: 1.125em;
+ color: #333333;
+
+ @include media-breakpoint-down(md) {
+     width: 100%;
+     font-size: 1em;
+ }
+
+ @include media-breakpoint-down(xs) {
+     width: 100%;
+ }
+ }
 
 section {
     &.main-bg {
@@ -1094,10 +1113,10 @@ section {
         }
 
         @include media-breakpoint-down(xs) {
-            background-image: none;
+            height: 150px;
         }
     }
-
+ 
     .pageName {
         position: absolute;
         width: 970px;
@@ -1114,8 +1133,9 @@ section {
         }
 
         @include media-breakpoint-down(xs) {
-            top: 60px;
-            width: 100%;
+            top: 90px;
+            margin: 0;
+            padding: 20px;
         }
 
         h1 {
@@ -1126,7 +1146,7 @@ section {
             }
 
             @include media-breakpoint-down(xs) {
-                font-size: 1.5em !important;
+                font-size: 1.333em !important;
             }
         }
     }
@@ -1134,10 +1154,16 @@ section {
     .intro {
         margin-top: 90px;
         font-size: 1.333em;
+        color: #333;
 
         @include media-breakpoint-down(md) {
-            margin-top: -130px;
-            padding: 0 20px;
+            margin-top: 20px;
+            margin: 20px 80px 0px 80px ;
+            padding: 0 50px;
+        }
+        @include media-breakpoint-down(xs){
+            margin: 30px 0 0 0 ;
+            font-size: 1em;
         }
     }
 
@@ -1145,18 +1171,28 @@ section {
         color: #091d69;
         font-weight: bold;
         margin-bottom: 20px;
+        @include media-breakpoint-down(md){
+            margin-top: 40px;
+        }
+    }
+
+    .column-flex {
+        @include media-breakpoint-down(md) {
+            flex-flow: column !important;
+        }
+    }
+
+    .column-reverse {
+        @include media-breakpoint-down(md) {
+            flex-flow: column-reverse !important;
+        }
     }
 
     .problem-content {
         @include media-breakpoint-down(md) {
-            flex-flow: column !important;
             align-content: center;
             align-items: center;
-        }
-
-        img {
-            width: 380px;
-            height: 430px;
+            margin: 0 auto !important;
         }
     }
 
@@ -1164,6 +1200,7 @@ section {
         span {
             color: #091d69;
             font-weight: bold;
+            flex-basis: 50%;
         }
 
         ol {
@@ -1192,10 +1229,17 @@ section {
             width: 80%;
             margin: 0 auto;
         }
+        @include media-breakpoint-down(xs){
+            font-size: 0.87em;
+        }
+
 
         .problem-one {
             margin-top: 80px;
-
+            @include media-breakpoint-down(md){
+                margin-top: 40px;
+            }
+           
             .problem-info {
                 margin-left: 70px;
             }
@@ -1203,6 +1247,9 @@ section {
 
         .problem-two {
             margin: 90px 0 85px 0;
+            @include media-breakpoint-down(md){
+                margin: 40px 0;
+            }
 
             .problem-info {
                 margin-right: 70px;
@@ -1212,6 +1259,9 @@ section {
 
         .problem-three {
             margin-bottom: 120px;
+            @include media-breakpoint-down(md){
+                margin-bottom: 60px;
+            }
 
             .problem-info {
                 margin-left: 70px;
