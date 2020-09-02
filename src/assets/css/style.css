@@ -2864,6 +2864,9 @@ section.challenges {
     @media (max-width: 991.98px) {
       section.challenges .carousel-item {
         max-width: 80%; } }
+    @media (max-width: 575.98px) {
+      section.challenges .carousel-item {
+        max-width: 100%; } }
   section.challenges .carousel-indicators li {
     display: inline-block;
     position: relative;
@@ -2943,7 +2946,7 @@ section.watch-the-video {
     .solutionOne::before {
       line-height: 1.5;
       top: -15px;
-      left: calc(50% - 75px); } }
+      left: calc(25% - 75px); } }
 
 .solutionTwo::before {
   content: "solution 02";
@@ -2963,7 +2966,7 @@ section.watch-the-video {
     .solutionTwo::before {
       line-height: 1.5;
       top: -15px;
-      left: calc(50% - 75px); } }
+      left: calc(25% - 75px); } }
 
 .solutionThree::before {
   content: "solution 03";
@@ -2983,7 +2986,7 @@ section.watch-the-video {
     .solutionThree::before {
       line-height: 1.5;
       top: -15px;
-      left: calc(50% - 75px); } }
+      left: calc(25% - 75px); } }
 
 section.solutions {
   background-image: url(../images/background-carousel.png);
@@ -3027,9 +3030,17 @@ section.solutions {
         font-size: 1.333em; } }
   section.solutions .carousel {
     background-color: #6bcbf2;
-    font-size: 1.185em; }
+    font-size: 1.185em;
+    height: 345px; }
+    @media (max-width: 575.98px) {
+      section.solutions .carousel {
+        height: 290px; } }
     section.solutions .carousel h2 {
+      margin-bottom: 35px;
       font-size: 0.75em; }
+      @media (max-width: 991.98px) {
+        section.solutions .carousel h2 {
+          margin-bottom: 15px; } }
     section.solutions .carousel .carousel-item {
       margin-left: auto;
       margin-right: auto;
@@ -3039,7 +3050,6 @@ section.solutions {
           max-width: 80%; } }
       @media (max-width: 575.98px) {
         section.solutions .carousel .carousel-item {
-          max-width: 50%;
           font-size: 1.33em; } }
     section.solutions .carousel .carousel-indicators li {
       display: inline-block;
@@ -3289,6 +3299,10 @@ section.hero {
   @media (max-width: 575.98px) {
     section.hero {
       height: 150px; } }
+
+@media (max-width: 991.98px) {
+  article {
+    padding: 0 15px !important; } }
 
 .articleName {
   position: absolute;

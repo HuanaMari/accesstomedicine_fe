@@ -12,10 +12,4 @@
     color: #091d69;
     text-transform: uppercase;
     line-height: 2.7rem;
-
-    @include media-breakpoint-down(md) {
-        line-height: 1.5;
-        top: -15px;
-        left: calc(50% - 75px);
-    }
 }

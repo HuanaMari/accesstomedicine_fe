@@ -467,6 +467,9 @@ section {
             @include media-breakpoint-down(md) {
                 max-width: 80%;
             }
+            @include media-breakpoint-down(xs){
+                max-width: 100%;
+            }
         }
 
         .carousel-indicators {
@@ -557,16 +560,34 @@ section {
 }
 
 .solutionOne::before {
-    @include carouselSolutionBefore("solution 01")
+    @include carouselSolutionBefore("solution 01");
+
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+        top: -15px;
+        left: calc(25% - 75px);
+
+    }
 }
 
 .solutionTwo::before {
-    @include carouselSolutionBefore("solution 02")
+    @include carouselSolutionBefore("solution 02");
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+        top: -15px;
+        left: calc(25% - 75px);
+    }
 }
 
 .solutionThree::before {
-    @include carouselSolutionBefore("solution 03")
+    @include carouselSolutionBefore("solution 03");
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+        top: -15px;
+        left: calc(25% - 75px);
+    }
 }
+
 
 section {
     &.solutions {
@@ -627,10 +648,18 @@ section {
         .carousel {
             background-color: #6bcbf2;
             font-size: 1.185em;
+            height: 345px;
+            @include media-breakpoint-down(xs){
+                height: 290px;
+            }
 
 
             h2 {
+                margin-bottom: 35px;
                 font-size: 0.75em;
+                @include media-breakpoint-down(md){
+                    margin-bottom: 15px;
+                }
             }
 
             .carousel-item {
@@ -644,7 +673,6 @@ section {
                 }
 
                 @include media-breakpoint-down(xs) {
-                    max-width: 50%;
                     font-size: 1.33em;
                 }
             }
@@ -942,6 +970,11 @@ section {
     }
 }
 
+article{
+    @include media-breakpoint-down(md){
+        padding: 0 15px !important;
+    }
+}
 .articleName {
     position: absolute;
     width: 970px;
